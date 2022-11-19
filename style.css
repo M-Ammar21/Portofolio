@@ -1,0 +1,594 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Quicksand";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 90px;
+  position: fixed;
+  align-items: center;
+  color: #7462e1;
+  background-color: rgba(255, 255, 255, 0.559);
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.foto {
+  width: 100px;
+  height: 50px;
+  /* border-radius: 100px; */
+}
+.foto > a > img {
+  object-fit: cover;
+  border-radius: 100px;
+  width: 100%;
+}
+
+.attribute ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0px;
+}
+
+.attribute ul li a {
+  padding: 12px;
+  text-decoration: none;
+  animation: all 1s ease 0s;
+  color: #344e41;
+}
+
+.attribute ul li a:hover {
+  color: crimson;
+}
+
+/* Header */
+header {
+  height: 100vh;
+  /* margin-top: 80px; */
+}
+.background {
+  /* background-image: url("bg-header.jpg"); */
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
+  background-position: 160px 0px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* position: 300px 200px; */
+  inset: 10px;
+}
+
+.video-container {
+  position: absolute;
+  inset: -50px 150px;
+  z-index: -100;
+}
+.content {
+  display: flex;
+  padding: 100px 80px;
+  padding-top: 150px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  /* inset: -100px ; */
+  z-index: 100;
+}
+
+.container {
+  width: 30%;
+  height: 70vh;
+}
+
+.myVideo {
+  width: 100%;
+  height: 100%;
+}
+
+.container h1 {
+  padding: 10px 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  line-height: 80px;
+}
+
+.container p {
+  padding: 10px 0px;
+  padding-bottom: 30px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.container > p > mark {
+  background-color: #558f5e;
+  color: white;
+}
+/* .highlight {
+  background-color: black;
+  color: white;
+} */
+
+.button_clickme {
+  display: flex;
+  width: 400px;
+}
+.button_clickme > div {
+  display: flex;
+  padding: 10px 23px;
+}
+.button_clickme > div > img {
+  width: 20px;
+  display: flex;
+  align-items: center;
+}
+.button_clickme > div > a {
+  padding: 0px 4px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.button_clickme > div > a:hover {
+  color: crimson;
+}
+
+.button_clickme > button {
+  border-radius: 18px;
+  background-color: #588157;
+  border: none;
+  animation: all 0.2s ease 0s;
+  padding: 13px 23px;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button_clickme > button > a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #ffff;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 140px;
+}
+.button_clickme > button > a > img {
+  width: 20px;
+  /* padding-left:10px ; */
+}
+
+.button_clickme > button > a > p {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  padding: 0;
+}
+
+.button_clickme > button:hover {
+  background-color: #58815756;
+}
+
+.button_clickme > button > a:hover {
+  color: crimson;
+}
+
+/* END */
+
+/* Container Bawah Logo Socmed */
+/* .container_bawah {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 180px;
+  box-sizing: border-box;
+} */
+
+/* .container_bawah > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .container_bawah > ul > li {
+  padding: 10px 60px;
+  list-style: none;
+} */
+
+/* .container_bawah > ul > li > a {
+  text-decoration: none;
+}
+.container_bawah > ul > li > a > p {
+  text-align: center;
+}
+.container_bawah > ul > li > a > img {
+  width: 80px;
+} */
+
+:root {
+  --bg: #ffffff;
+  --color-icon: #535c68;
+  --social-icon1: #e4405f;
+  --social-icon2: #3b5999;
+  --social-icon3: #d84924;
+  --social-icon4: #3492cb;
+}
+.container_bawah {
+  margin: 0;
+  padding: 0;
+}
+.nav_bawah {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  z-index: -10;
+}
+.icon-list {
+  width: 100%;
+  max-width: 50rem;
+  padding: 0px 1.5rem;
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-item {
+  list-style: none;
+}
+.icon-link {
+  display: inline-flex;
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--color-icon);
+  width: 6rem;
+  height: 6rem;
+  transition: 0.5s linear;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+}
+.icon-link:hover {
+  color: #fff;
+}
+.icon-link i {
+  margin: auto;
+}
+
+.icon-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 6rem;
+  height: 6rem;
+  background: #000;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.3s cubic-bezier(0.95, 0.32, 0.37, 1.21);
+}
+.icon-link:hover::before {
+  transform: scale(1);
+}
+.icon-item:nth-child(1) a:hover:before {
+  background: var(--social-icon1);
+}
+.icon-item:nth-child(2) a:hover:before {
+  background: var(--social-icon2);
+}
+.icon-item:nth-child(3) a:hover:before {
+  background: var(--social-icon3);
+}
+.icon-item:nth-child(4) a:hover:before {
+  background: var(--social-icon4);
+}
+.icon-item:nth-child(5) a:hover:before {
+  background: var(--social-icon5);
+}
+
+/* END */
+
+main {
+  height: 1200px;
+  box-sizing: border-box;
+}
+
+.konten_atas {
+  height: 80vh;
+}
+
+.container_main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 80px;
+  /* padding-bottom: 100px; */
+  /* height: 600px; */
+}
+
+.experience {
+  padding: 60px 70px;
+  width: 35%;
+  /* padding-right: 90px; */
+  display: block;
+}
+.experience > div {
+  height: 250px;
+}
+.experience > div > h1 {
+  /* line-height: 120px; */
+  padding-bottom: 50px;
+  font-size: 68px;
+}
+.experience > div > h2 {
+  /* line-height: 120px; */
+  padding-bottom: 50px;
+  font-size: 48px;
+}
+
+.special {
+  padding: 60px 70px;
+  padding-top: 80px;
+  /* display: flex; */
+}
+.special > div {
+  /* padding: 60px 70px; */
+  /* display: flex; */
+  /* display: block; */
+}
+.special > div > h1 {
+  width: 100%;
+  height: 35%;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.cotainer_special {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.cotainer_special > div {
+  width: 280px;
+  height: 250px;
+  margin: 8px;
+  padding: 20x;
+  align-items: flex-end;
+}
+.cotainer_special > div {
+  display: flex;
+  /* align-items: flex-start; */
+  justify-content: center;
+  padding-right: 90px;
+  padding-bottom: 40px;
+}
+
+.cotainer_special > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  height: 150px;
+  padding-top: 20px;
+}
+.cotainer_special > div > div:hover {
+  /* transform: translateX(5px) translateY(5px) ; */
+  /* box-shadow: #8b80f9 7px 9px 0px; */
+}
+
+.cotainer_special > div > div > img {
+  width: 30px;
+  /* padding-right: 5px; */
+  padding-top: 40px;
+}
+
+.cotainer_special > div > div > p {
+  font-family: "Quicksand";
+  font-weight: 600;
+}
+
+.front:hover {
+  background-color: #a3b18a;
+  transform: translateX(-10px) translateY(-10px);
+  box-shadow: #c4c4c4 7px 9px 0px;
+}
+.front {
+  background-color: #a3b18a;
+  /* transform: translateX(5px) translateY(5px) ; */
+}
+
+.ui,
+.brand {
+  background-color: #c4c4c4;
+  animation: all 0.4s ease 0.5s;
+}
+.ui:hover,
+.brand:hover {
+  background-color: #c4c4c4;
+  transform: translateX(-10px) translateY(-10px);
+  box-shadow: #a3b18a 7px 9px 0px;
+}
+
+.title > h1 {
+  font-size: 35px;
+  height: 60px;
+  text-align: center;
+}
+
+/* Konten_Bawah */
+
+.konten_bawah {
+  height: 90vh;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-image: linear-gradient(white, #dad7cd);
+  padding-top: 150px;
+  box-sizing: border-box;
+}
+
+.foto_konten_bawah {
+  width: 1000px;
+  height: 200hv;
+  /* padding: 30px; */
+  display: flex;
+  padding-bottom: 100px;
+  /* justify-content: center;
+  align-items: center; */
+
+  /* background-color: crimson; */
+}
+.foto_konten_bawah > div {
+  width: 900px;
+  display: flex;
+}
+.artikel_konten {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  padding-right: 40px;
+}
+
+.artikel_konten > img {
+  width: 40px;
+  height: 67px;
+  padding-top: 25px;
+}
+
+.artikel_konten > p {
+  height: 200px;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.container_konten {
+  width: 410px;
+  height: 400px;
+  padding: 5px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+.foto_konten {
+  object-fit: cover;
+  width: 389px;
+  height: 391px;
+
+  /* size: 100px 100px; */
+  /* padding: 10px; */
+  /* height: 100px; */
+}
+
+.infografis {
+  height: 100%;
+  padding: 40px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.infografis > div > h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+  font-weight: 400px;
+  line-height: 60px;
+}
+
+.infografis > div > p {
+  font-size: 26px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+}
+
+#footer {
+  background-color: #4e675b;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.container_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 500px;
+  flex-direction: column;
+
+  /* flex-direction: row; */
+}
+.socmed {
+  display: flex;
+  justify-content: space-around;
+}
+.socmed i {
+  font-size: 30px;
+  padding: 8px 17px;
+  padding-bottom: 10px;
+  transition: all 0.3 ease 0s;
+  /* color: crimson; */
+  color: black;
+}
+
+.socmed i.fa-brands.fa-instagram:hover {
+  color: #e4405f;
+}
+.socmed i.fa-brands.fa-linkedin:hover {
+  color: #3b5999;
+}
+.socmed i.fa-brands.fa-twitter:hover {
+  color: #1c93e4;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info > P {
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+}
+
+.info > span {
+  font-size: 40px;
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: center; */
+  /* height: 60px; */
+}
+
+.created {
+  padding-top: 50px;
+}
