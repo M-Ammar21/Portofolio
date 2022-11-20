@@ -76,7 +76,7 @@ header {
 
 .video-container {
   position: absolute;
-  inset: -50px 150px;
+  inset: -10px 150px;
   z-index: -100;
 }
 .content {
